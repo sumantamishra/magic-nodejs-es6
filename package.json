@@ -4,18 +4,13 @@
   "description": "Magic: Boilerplate code for NodeJS project using es6, eslint and unit testing.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sumantamishra/magic-nodejs-es6.git"
+    "lint": "eslint .",
+    "lint-fix": "npm run lint -- --fix",
+    "pretest": "npm run lint",
+    "test": "nyc mocha ./test"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sumantamishra/magic-nodejs-es6/issues"
-  },
-  "homepage": "https://github.com/sumantamishra/magic-nodejs-es6#readme",
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.9.1"
@@ -27,6 +22,8 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1"
   }
 }
