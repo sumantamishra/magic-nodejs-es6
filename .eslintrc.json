@@ -17,6 +17,11 @@
     "rules": {
         "semi": ["error", "always"],
         "quotes": ["error", "double"],
-        "camelcase":"error"
+        "camelcase": ["error", { "properties": "always" }],
+        "no-unused-vars": "error",
+        "no-undefined": "error",
+        "block-scoped-var": "error",
+        "no-duplicate-imports": "error",
+        "indent": ["error", 2]
     }
 }
