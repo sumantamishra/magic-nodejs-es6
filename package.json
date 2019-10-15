@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "lint-fix": "npm run lint -- --fix",
     "pretest": "npm run lint",
-    "test": "nyc mocha ./test"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +23,6 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "mocha": "^6.2.1",
-    "nyc": "^14.1.1"
+    "jest": "^24.9.0"
   }
 }

@@ -3,7 +3,7 @@
         "browser": true,
         "es6": true,
         "node": true,
-        "mocha": true
+        "jest": true
     },
     "extends": [
         "eslint:recommended"
@@ -12,19 +12,20 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
     },
     "rules": {
         "semi": ["error", "always"],
-        "quotes": ["error", "double"],
+        "quotes": ["error", "single"],
         "camelcase": ["error", { "properties": "always" }],
         "no-unused-vars": "error",
         "no-undefined": "error",
         "block-scoped-var": "error",
         "no-duplicate-imports": "error",
-        "indent": ["error", 4],
+        "indent": ["error", 2],
         "no-spaced-func": "error",
         "space-before-function-paren": ["error", { "anonymous": "never", "named": "always" }],
         "no-func-assign": "error",
