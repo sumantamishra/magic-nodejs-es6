@@ -18,6 +18,14 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-const-assign": "error",
+        "no-var": "error",
+        "no-new-object": "error",
+        "object-shorthand": ["error", "always"],
+        "quote-props": ["error", "consistent"],
+        "no-array-constructor": "error",
+        "prefer-template": "error",
+        "template-curly-spacing": ["error", "never"],
         "semi": ["error", "always"],
         "quotes": ["error", "single"],
         "camelcase": ["error", { "properties": "always" }],
